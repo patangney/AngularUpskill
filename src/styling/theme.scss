@@ -1,0 +1,30 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+// $primary: $cyan;
+
+
+$theme-colors: (
+  "primary":    $cyan,
+);
+
+// Create your own map
+$brand: (
+  "brand": $orange,
+  "brand-secondary": $orange-100
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $brand);
+
+
+// Headers
+/*
+    Brand Colors
+    Purple: #5C267B - rgb(92, 38, 123)
+    Red: #D11A17 - rgb(209, 26, 23)
+    Aqua: #B9DAD0 - rgb(185, 218, 208)
+    Grey: #C7C8CA - rgb(199, 200, 202)
+    Blue: #7EA8AD - rgb(126, 168, 173)
+
+*/
